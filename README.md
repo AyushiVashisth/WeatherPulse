@@ -85,9 +85,6 @@ weatherpulse/
 ├── style.css
 ├── main.js
 ├── .env
-├── assets/
-│   ├── favicon.ico
-│   ├── weather-icons/
 ```
 
 ---
