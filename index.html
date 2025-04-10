@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.freepik.com/512/9098/9098495.png">
+</head>
+
+<body>
+    <div class="container">
+        <div class="weather-app">
+            <h1>WeatherPulse App</h1>
+            <div class="search-box">
+                <input type="text" id="city-input" placeholder="Enter city name" autocomplete="off">
+                <button id="search-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </button>
+            </div>
+            <div class="error-box" id="error-box"></div>
+            <div class="weather-info" id="weather-info">
+                <div class="weather-main">
+                    <img id="weather-icon" src="" alt="Weather Icon">
+                    <h2 id="temperature"></h2>
+                </div>
+                <div class="weather-details">
+                    <h3 id="city-name"></h3>
+                    <p id="weather-desc"></p>
+                    <div class="additional-info">
+                        <div class="info-item">
+                            <span class="label">Humidity</span>
+                            <span id="humidity"></span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Wind Speed</span>
+                            <span id="wind-speed"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>
